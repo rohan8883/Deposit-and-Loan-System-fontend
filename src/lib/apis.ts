@@ -62,4 +62,12 @@ export const loanApi = {
    updateMember: '/member/update-member',
    getAllMembers: '/member/get-members',
    deleteMember: '/member/update-member-status',
+
+   createPlan: '/plan/create-plan',
+   getAllPlan: '/plan/get-all-plan',
+   getPlanById: '/plan/get-plan-by-id',
+   updatePlan: '/plan/update-plan',
+   updatePlanStatus: '/plan/update-plan-status',
+   deletePlan: '/plan/delete-plan',
+
 } as const;

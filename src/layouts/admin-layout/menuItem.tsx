@@ -63,6 +63,7 @@ export const menuItems = [
       ),
       submenu: [
         { name: "Role", url: "role-master" },
+        { name: "Plans", url: "plans-list" },
       ],
     },
     // {

@@ -46,6 +46,7 @@ const LandingPage = lazyWithRetries(() => import('@/pages/loan/guest/landing'));
 const AdminHome = lazyWithRetries(() => import('@/pages/loan/admin/home'));
 const CreateUser = lazyWithRetries(() => import('@/pages/loan/admin/create-user'));
 const RoleMaster = lazyWithRetries(() => import('@/pages/loan/admin/role'));
+const PlanMaster = lazyWithRetries(() => import('@/pages/loan/admin/plans'));
 const UserMaster = lazyWithRetries(() => import('@/pages/loan/admin/users'));
 const AddMember = lazyWithRetries(() => import('@/pages/loan/admin/new-loan-request'));
 const LoanList = lazyWithRetries(() => import('@/pages/loan/admin/loan-list'));
@@ -189,6 +190,13 @@ const routes: Route[] = [
         name: 'User Profile',
         path: 'profile',
         element: <Profile />,
+        exact: true
+      },
+      {
+        id: '9',
+        name: 'Plans List',
+        path: 'plans-list',
+        element: <PlanMaster />,
         exact: true
       },
      
